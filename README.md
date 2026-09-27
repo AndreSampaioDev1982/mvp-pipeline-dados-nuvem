@@ -25,10 +25,10 @@ Os dados utilizados são públicos e disponibilizados pela própria plataforma D
 ## 2. Carga dos Dados (Etapa 4.2)
 
 ### Explicação da Ingestão
-Como os dados brutos de mais de 10 milhões de linhas já residem no ambiente de armazenamento distribuído interno da Databricks, o processo de carga inicial (Camada Bronze) consistiu em ler esse diretório público e persistir as informações no formato nativo Delta Lake dentro do nosso próprio Schema de trabalho.
+Como os dados brutos de mais de 1 bilhão de linhas já residem no ambiente de armazenamento distribuído interno da Databricks, o processo de carga inicial (Camada Bronze) consistiu em ler esse diretório público e persistir as informações no formato nativo Delta Lake dentro do nosso próprio Schema de trabalho.
 
 *   **Script de Carga:** O código utilizado para esta etapa pode ser encontrado no arquivo `[insira_o_nome_do_seu_arquivo.sql]` deste repositório.
-*   **Evidência de Volumetria (+10 Milhões de Linhas):**
+*   **Evidência de Volumetria (+1 bilhão de Linhas):**
     > *Substitua esta linha pelo print do resultado da sua query `SELECT COUNT(*)` na tabela bronze.*
     > ![Contagem de Linhas da Tabela Bronze](link_ou_caminho_da_sua_imagem_aqui.png)
 
