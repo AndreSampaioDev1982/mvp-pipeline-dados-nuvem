@@ -7,14 +7,15 @@ Este repositório contém a entrega do Produto Mínimo Viável (MVP) de Engenhar
 ## 1. Contexto de Negócios e Perguntas (Etapa 2. e 4.1)
 
 ### Contexto dos Dados Brutos
-*Descreva aqui brevemente o problema de negócio que você quer resolver. Exemplo:*
-O objetivo deste projeto é analisar o comportamento das corridas de táxi na cidade de Nova York para identificar padrões de faturamento e preferências dos usuários. A base de dados utilizada provém dos conjuntos de dados públicos da Databricks (`samples.nyctaxi.trips`), contendo mais de 10 milhões de registros reais de viagens.
+
+O objetivo deste projeto é analisar o comportamento das corridas de táxi na cidade de Nova York para identificar padrões de faturamento e preferências dos usuários. A base de dados utilizada provém dos conjuntos de dados públicos da Databricks (`/databricks-datasets/nyctaxi/tripdata/yellow/`), contendo mais de 10 milhões de registros reais de viagens.
 
 ### Perguntas de Negócio Formulações
 Para guiar este MVP, foram definidas as seguintes perguntas:
 1. **Pergunta 1:** Qual o horário do dia com a maior média de gorjetas?
 2. **Pergunta 2:** Quais tipos de pagamento geram os maiores valores totais por corrida?
-3. **Pergunta 3:** *[Insira uma terceira pergunta de sua preferência ou use as duas do script anterior]*
+3. **Pergunta 3:** *Pergunta 3: Quais são as 5 rotas (origem-destino) mais lucrativas da cidade?*
+4. **Pergunta 4:** *Pergunta 4: Quais são as 5 rotas (origem-destino) menos lucrativas da cidade?*
 
 ### Licença dos Dados
 Os dados utilizados são públicos e disponibilizados pela própria plataforma Databricks para fins educacionais e de demonstração.
