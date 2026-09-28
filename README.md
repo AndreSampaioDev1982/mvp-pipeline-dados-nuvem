@@ -58,8 +58,8 @@ O projeto foi modelado seguindo as melhores práticas de um Data Lakehouse atrav
 *   `mes` (INTEGER): Mês do ano (1 a 12).
 
 ### Evidência de Persistência na Nuvem
-> *[Substitua esta linha pelo print da aba "Catalog" do Databricks mostrando as tabelas criadas no seu Schema]*
-> ![Tabelas Persistidas no Databricks](caminho_da_sua_imagem_do_catalogo.png)
+
+> ![Tabelas Persistidas no Databricks]([caminho_da_sua_imagem_do_catalogo.png](https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/58c407229d37320a7ff8086e0dcde0a933f7fd14/002%20-%20tabelas_databricks.png))
 
 ---
 
