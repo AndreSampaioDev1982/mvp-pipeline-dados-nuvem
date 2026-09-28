@@ -90,31 +90,31 @@ Durante a fase de transição da camada Bronze para a **Silver**, foram aplicada
 
 #### Pergunta 1: Qual o horário do dia com a maior média de gorjetas?
 *Análise Técnica:* Query SQL executada agrupando o valor médio de gorjeta por hora do dia a partir da tabela `fato_corridas`.
-*Discussão do Resultado:* *[Escreva aqui a sua interpretação dos números baseada nos resultados da query do Databricks]*.
-> *[Substitua esta linha pelo print do gráfico/tabela gerado no Databricks para a Pergunta 1]*
-> ![Gráfico Pergunta 1](caminho_grafico_1.png)
+*Discussão do Resultado:* *[De acordo com o gráfico dos dados, o  melhor horário do dia com maiores valores de gorjeta é as 5h da mannhã.]*.
+
+> ![Gráfico Pergunta 1]([caminho_grafico_1.png](https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/005%20-%20media_gorjeta.png))
 
 #### Pergunta 2: Quais tipos de pagamento geram os maiores valores totais por corrida?
 *Análise Técnica:* Query SQL executada calculando o ticket médio e o faturamento acumulado por modalidade de pagamento.
-*Discussão do Resultado:* *[Escreva aqui a sua interpretação dos números]*.
-> *[Substitua esta linha pelo print do gráfico/tabela gerado no Databricks para a Pergunta 2]*
-> ![Gráfico Pergunta 2](caminho_grafico_2.png)
+*Discussão do Resultado:* *Os tipos de pagamentos que geram maiores valores totais de corrida são CRD e CASH. As duas formas de pagamento representam 76,85% dos faturamentos*.
+
+> ![Gráfico Pergunta 2]([caminho_grafico_2.png](https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/006%20-%20maiores_tipos_pagamento.png))
 
 #### Pergunta 3: Qual a relação entre a distância percorrida (em milhas) e o valor total cobrado?
 *Análise Técnica:* Consulta analítica comparando faixas de distância com as médias de faturamento geradas.
-*Discussão do Resultado:* *[Escreva aqui a sua interpretação dos números]*.
-> *[Substitua esta linha pelo print do gráfico/tabela gerado no Databricks para a Pergunta 3]*
-> ![Gráfico Pergunta 3](caminho_grafico_3.png)
+*Discussão do Resultado:* *[Observa-se que quanto maior a distância percorrida, maior é o valor médio]*.
+
+> ![Gráfico Pergunta 3]([caminho_grafico_3.png](https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/007%20-%20valor_medio_dist%C3%A2ncia.png))
 
 ---
 
 ## 7. Autoavaliação
 
 ### Atingimento dos Objetivos
-*[Discorra aqui sobre se você conseguiu atingir os objetivos traçados antes de iniciar o projeto. Discuta o que foi possível responder com a infraestrutura montada].*
+*[Foi possível responder todas as perguntas com base nos dados disponíveis para estudo.].*
 
 ### Dificuldades Encontradas
-*[Mencione o desafio de manipular colunas genéricas posicionais (_c0, _c1) vindas de arquivos sem cabeçalho estruturado e a necessidade de usar funções defensivas como try_cast para processar uma volumetria superior a 10 milhões de linhas de maneira performática no ambiente gratuito].*
+*[Um dos grandes desafios foi compreender o conteúdo dos dados para identificar os cabeçalhos não estruturados (_c0, _c1, etc), além da necessidade de usar funções defensivas como try_cast para processar uma volumetria superior a 10 milhões de linhas de maneira performática no ambiente gratuito].*
 
 ### Trabalhos Futuros
-*[Sugira ideias para enriquecer este projeto no seu portfólio pessoal (ex: criar uma orquestração automática com Airflow ou Databricks Workflows, cruzar com dados meteorológicos de Nova York, etc)].*
+* Realizar o cruzamento dos dados meteorológicos de Nova York, para identificar se há alguma variação de valores em períodos especificos como chuvas intensas e outros fatores climáticos .*
