@@ -19,7 +19,7 @@ Para guiar este MVP, foram definidas as seguintes perguntas:
 Os dados utilizados são públicos e disponibilizados pela própria plataforma Databricks em seu repositório de amostras globais para fins educacionais, científicos e de demonstração.
 
 ---
-
+ 
 ## 2. Carga dos Dados (Etapa 4.2)
 
 ### Explicação da Ingestão
