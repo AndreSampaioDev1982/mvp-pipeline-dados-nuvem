@@ -28,7 +28,7 @@ Os dados brutos originais estavam distribuídos em arquivos CSV sem cabeçalho e
 *   **Script de Carga:** O código correspondente a esta etapa está contido no arquivo de scripts SQL deste repositório.
 *   **Evidência de Volumetria (+10 Milhões de Linhas):**
     > *[Substitua esta linha pelo print do resultado da sua query SELECT COUNT(*) na tabela bronze]*
-    > ![Contagem de Linhas da Tabela Bronze](001 - totallinhastabela.png)
+    > ![Contagem de Linhas da Tabela Bronze]([001 - totallinhastabela.png](https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/21c8d97ccfe45f1993e4a0defb6a71ac6aa6e40d/001%20-%20totallinhastabela.png))
 
 ---
 
