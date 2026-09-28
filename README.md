@@ -59,7 +59,7 @@ O projeto foi modelado seguindo as melhores práticas de um Data Lakehouse atrav
 
 ### Evidência de Persistência na Nuvem
 
-> ![Tabelas Persistidas no Databricks]((https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/58c407229d37320a7ff8086e0dcde0a933f7fd14/002%20-%20tabelas_databricks.png))
+> ![Tabelas Persistidas no Databricks] https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/58c407229d37320a7ff8086e0dcde0a933f7fd14/002%20-%20tabelas_databricks.png
 
 ---
 
@@ -92,29 +92,29 @@ Durante a fase de transição da camada Bronze para a **Silver**, foram aplicada
 *Análise Técnica:* Query SQL executada agrupando o valor médio de gorjeta por hora do dia a partir da tabela `fato_corridas`.
 *Discussão do Resultado:* *[De acordo com o gráfico dos dados, o  melhor horário do dia com maiores valores de gorjeta é as 5h da mannhã.]*.
 
-> ![Gráfico Pergunta 1]([caminho_grafico_1.png](https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/005%20-%20media_gorjeta.png))
+> ![Gráfico Pergunta 1] (https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/005%20-%20media_gorjeta.png
 
 #### Pergunta 2: Quais tipos de pagamento geram os maiores valores totais por corrida?
 *Análise Técnica:* Query SQL executada calculando o ticket médio e o faturamento acumulado por modalidade de pagamento.
 *Discussão do Resultado:* *Os tipos de pagamentos que geram maiores valores totais de corrida são CRD e CASH. As duas formas de pagamento representam 76,85% dos faturamentos*.
 
-> ![Gráfico Pergunta 2]([caminho_grafico_2.png](https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/006%20-%20maiores_tipos_pagamento.png))
+> ![Gráfico Pergunta 2] https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/006%20-%20maiores_tipos_pagamento.png
 
 #### Pergunta 3: Qual a relação entre a distância percorrida (em milhas) e o valor total cobrado?
 *Análise Técnica:* Consulta analítica comparando faixas de distância com as médias de faturamento geradas.
 *Discussão do Resultado:* *[Observa-se que quanto maior a distância percorrida, maior é o valor médio]*.
 
-> ![Gráfico Pergunta 3]([caminho_grafico_3.png](https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/007%20-%20valor_medio_dist%C3%A2ncia.png))
+> ![Gráfico Pergunta 3] https://github.com/AndreSampaioDev1982/mvp-pipeline-dados-nuvem/blob/b5406877fcc05e6785fda801e53db78341792d55/007%20-%20valor_medio_dist%C3%A2ncia.png
 
 ---
 
 ## 7. Autoavaliação
 
 ### Atingimento dos Objetivos
-*[Foi possível responder todas as perguntas com base nos dados disponíveis para estudo.].*
+* Foi possível responder todas as perguntas com base nos dados disponíveis para estudo.*
 
 ### Dificuldades Encontradas
-*[Um dos grandes desafios foi compreender o conteúdo dos dados para identificar os cabeçalhos não estruturados (_c0, _c1, etc), além da necessidade de usar funções defensivas como try_cast para processar uma volumetria superior a 10 milhões de linhas de maneira performática no ambiente gratuito].*
+* Um dos grandes desafios foi compreender o conteúdo dos dados para identificar os cabeçalhos não estruturados (_c0, _c1, etc), além da necessidade de usar funções defensivas como try_cast para processar uma volumetria superior a 10 milhões de linhas de maneira performática no ambiente gratuito.*
 
 ### Trabalhos Futuros
 * Realizar o cruzamento dos dados meteorológicos de Nova York, para identificar se há alguma variação de valores em períodos especificos como chuvas intensas e outros fatores climáticos .*
